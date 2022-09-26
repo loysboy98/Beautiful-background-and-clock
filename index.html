@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful-background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h3>Hello, Loysboy98</h3>
+        <h1>Now : 12:12:12</h1>
+        <button>Change the background</button>
+        <p class="icon"><img src="coffee.svg" alt="icon"></p>
+    </div>
+    
+    <script>
+        const name = prompt('What is your name ?!')
+        document.querySelector('h3').textContent = 'Hello, ' + name
+        document.querySelector('h1').textContent ='Now ' + new Date().toLocaleTimeString()
+        
+        setInterval(function() {
+            document.querySelector('h1').textContent ='Now ' + new Date().toLocaleTimeString()
+        }, 1000)
+        
+        
+        const colors = ['#C33764', '#A52A2A','#8e44ad']
+        let index = 0
+        
+        document.querySelector('button').onclick = function () {
+            document.body.style.background = colors[index]
+            index++
+            if (index >= colors.length) index = 0
+        }
+    </script>
+    
+</body>
+</html>

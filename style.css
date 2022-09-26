@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Passions+Conflict&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://img2.akspic.ru/crops/9/2/5/4/6/164529/164529-nacionalnyj_park_glejsher-ozero_svyatoj_marii-nacionalnyj_park-park-lednik-3840x2160.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .25s;
+    font-family: 'Great Vibes', cursive;
+}
+div{
+    font-size: 33px;
+    text-align: center;
+    color: white;
+}
+button{
+    border: 1px solid white;
+    padding: 13px 15px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 20px;  
+}
+h1, h3 {
+    animation: down 1s;
+    letter-spacing: 3px;
+    font-size: 85px;
+    margin: auto; 
+}
+@keyframes down {
+    from {
+        transform: translateY(-50px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
+button, p {
+    animation: up 1s;
+}
+@keyframes up {
+    from {
+        transform: translateY(+50px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}   
